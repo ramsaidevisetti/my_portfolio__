@@ -213,19 +213,15 @@ header{
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px whitesmoke;
 }
-
 .internalbox{
-    width: 250px;
-    height: 220px;
-    background-color: whitesmoke;
-    border-radius: 8px;
-    margin-left: 20px;
-    text-align: center;
-    box-shadow: 3px 3px 5px white;
+    display: flex;
+    padding: 25px;
 }
 .certimage{
-    height: 180px;
+    height: 220px;
     width: 250px;
+    border-radius: 8px;
+    margin-left: 10px;
 }
 .projectmain{
     height: 100vh;
@@ -233,5 +229,75 @@ header{
 }
 .contactmain{
     height: 100vh;
-    background-color: rgb(154, 167, 169)
+    text-align: center;
+    background-color: rgb(154, 167, 169);
+    padding-top: 30px;
+}
+.contacthead{
+    padding-top: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.contactmail{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 7px;
+}
+.contactcard{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nameinput{
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 6px;
+    border: 0 solid;
+    box-shadow: 1px 1px 2px black;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.name{
+    margin: 10px;
+}
+.messageinput{
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 6px;
+    border: 0 solid;
+    box-shadow: 1px 1px 2px black;
+    margin-top: 25px;
+    margin-right: 20px;
+    width: 200px;
+}
+.icon{
+    padding: 30px 0 0 0;
+    width: 30px;
+    height: 30px;
+}
+.iconscontact{
+    margin-top: 30px;
+}
+.icon:hover{
+    width: 40px;
+    height: 40px;
+}
+.projecthead{
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: underline;
+}
+.projectbox{
+    height: 80vh;
+    width: 90vw;
+    padding: 10px;
+    margin: 25px 0 0 40px;
+    background-color: rgb(154, 167, 169);
+    box-shadow: 1px 1px 3px;
+}
+.projectdetails{
+    margin: 10px;
 }
