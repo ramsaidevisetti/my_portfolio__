@@ -1,303 +1,267 @@
-.main{
-    background-image: url("https://img.freepik.com/free-vector/digital-technology-polygon-connection-concept-background_1035-18086.jpg");
-    background-size: cover;
-    opacity: 1;
-    height: 100vh;
-}
-*{
-    margin: 0;
-}
-header{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: sticky;
-}
-.mainhead{
-    color: rgb(34, 121, 207);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 10px 0 0 25px;
-}
-.navbar{
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    right: 30px;
-}
-.navelements{
-    text-decoration: none;
-    margin-left: 7px;
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-}
-.navelements:hover{
-    color: rgb(40, 38, 38);
-    font-weight: bold;
-    font-size: 23px;
-    text-decoration: underline;
-}
-.icon{
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-}
-.icons{
-    padding: 30px 0 0 0;
-}
-.homebtn{
-    padding: 7px;
-    color: white;
-    border: 0 solid;
-    border-radius: 10px;
-    background-color: rgb(34, 121, 207);
-    margin-top: 15px;
-    width: 100px;
-}
-.sectionhome{
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.homedetails{
-    position: relative;
-    padding: 10px;
-    top: 170px;
-    left: 88px
-}
-.homeimage{
-    height: 400px;
-    width: 400px;
-    border-radius: 60%;
-    margin: 80px 100px;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main2{
-    height: 100vh;
-    background-color: rgb(154, 167, 169);
-
-}
-.abouthead{
-    font-family: "Roboto";
-    font-size: 40px;
-    text-align: center;
-    color: black;
-    font-weight: 500;
-    padding-top: 15px;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 6px #000000;
-    
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
-.boxsub{
-    border: 5px solid;
-    height: 200px;
-    width: 200px;
-    color: black;
-    position: relative;
-    top: 50px;
-    left: 130px;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 2px 2px;
+header {
+  background: #6c63ff;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
 }
-.aboutimage{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    left: 150px;
-    z-index: 2;
-    top: 116%;
-    
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.aboutsubhead{
-    font-family: "Roboto";
-    font-size: 30px;
-    font-weight: 500;
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
 }
-.aboutsub2{
-    margin: 100px 0 0 100px;
-    width: 40vw;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
 }
-.aboutsub{
-    display: flex;
-    justify-content: space-between;
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
-.aboutsub3{
-    position: relative;
-    right: 5%;
+
+.nav-links a:hover {
+  color: #dcd9ff;
+  text-shadow: 0 0 6px rgba(108, 99, 255, 0.5);
 }
-.abouttech{
-    position: relative;
-    top: 35px;
-    right: 160px;
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
-.techbox1{
-    width: 400px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6c63ff;
+  text-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
 }
-.techbox2{
-    width: 260px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
-.techbox3{
-    width: 300px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.home .content {
+  flex: 1;
+  min-width: 280px;
 }
-.techbox4{
-    width: 100px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #4a47a3;
+  text-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
 }
-.techbox5{
-    width: 300px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.home h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
-.techbox6{
-    width: 100px;
-    height: 6px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #000000;
-    padding-top: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 5px solid #dcd9ff;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
 }
-.Certificationmain{
-    height: 100vh;
-    background-color: black;
-    padding: 15px;
+
+.homebtn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
 }
-.certificatehead{
-    font-family: "Roboto";
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-    padding-top: 15px;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 3px whitesmoke;
+
+.homebtn:hover {
+  background: #574fd3;
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
 }
-.internalbox{
-    display: flex;
-    padding: 25px;
+
+.social-icons {
+  margin-top: 1rem;
 }
-.certimage{
-    height: 220px;
-    width: 250px;
-    border-radius: 8px;
-    margin-left: 10px;
+
+.social-icons a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.projectmain{
-    height: 100vh;
-    background-color: whitesmoke;
+
+.social-icons a:hover {
+  color: #574fd3;
+  text-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
 }
-.contactmain{
-    height: 100vh;
-    text-align: center;
-    background-color: rgb(154, 167, 169);
-    padding-top: 30px;
+
+.project {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.15);
 }
-.contacthead{
-    padding-top: 30px;
-    text-decoration: underline;
-    margin-bottom: 10px;
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #6c63ff;
+  color: white;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.4);
 }
-.contactmail{
-    text-decoration: none;
-    font-size: 30px;
-    color: blue;
-    margin-bottom: 7px;
-}
-.contactcard{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
     align-items: center;
-}
-.nameinput{
-    margin-left: 5px;
-    border-radius: 4px;
-    padding: 6px;
-    border: 0 solid;
-    box-shadow: 1px 1px 2px black;
-    margin-top: 25px;
-    margin-right: 20px;
-}
-.name{
-    margin: 10px;
-}
-.messageinput{
-    margin-left: 5px;
-    border-radius: 4px;
-    padding: 6px;
-    border: 0 solid;
-    box-shadow: 1px 1px 2px black;
-    margin-top: 25px;
-    margin-right: 20px;
-    width: 200px;
-}
-.icon{
-    padding: 30px 0 0 0;
-    width: 30px;
-    height: 30px;
-}
-.iconscontact{
-    margin-top: 30px;
-}
-.icon:hover{
-    width: 40px;
-    height: 40px;
-}
-.projecthead{
     text-align: center;
-    text-shadow: 1px 1px 2px black;
-    text-decoration: underline;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
-.projectbox{
-    height: 80vh;
-    width: 90vw;
-    padding: 10px;
-    margin: 25px 0 0 40px;
-    background-color: rgb(154, 167, 169);
-    box-shadow: 1px 1px 3px;
+
+.card {
+  width: 150px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 1rem;
+  text-align: center;
 }
-.projectdetails{
-    margin: 10px;
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.25);
+}
+
+.card-logo {
+  width: 100px;
+  margin-top: 20px;
+  filter: drop-shadow(0 0 5px rgba(108, 99, 255, 0.3));
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 1rem 0 0.5rem;
+  color: #6c63ff;
+  text-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #6c63ff;
+  text-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+.techimage {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #dcd9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+}
+
+/* Certificate Cards */
+.certificate-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.15);
+}
+
+.certificate-item img.techimage {
+  width: 150px;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.certificate-item span {
+  font-weight: 600;
+  text-align: center;
+  color: #6c63ff;
+  text-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
 }
